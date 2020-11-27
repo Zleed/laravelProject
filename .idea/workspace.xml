@@ -20,15 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="920ee786-3566-4d48-84fd-8b98894dc42d" name="Default Changelist" comment="make:auth">
+      <change afterPath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/app/Models/Profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/database/migrations/2020_11_27_215502_create_profiles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/database/migrations/2020_11_27_222222_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/public/svg/logo2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,12 +163,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kq8SHQDjFP1TLeXCGVgBxdSfL9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -215,8 +223,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="make:auth" />
     <option name="LAST_COMMIT_MESSAGE" value="make:auth" />
   </component>
@@ -234,6 +244,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="512" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606481723405" />
+    <state x="549" y="340" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606510444338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="340" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606510444338" />
     <state x="567" y="314" width="393" height="195" key="Github.ShareDialog" timestamp="1606418824733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -246,13 +260,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="280" y="26" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606481501914" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1606492238507">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1606509448090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606492238507" />
-    <state x="431" y="145" key="search.everywhere.popup" timestamp="1606471459402">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606509448090" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1606513525610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606471459402" />
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606513525610" />
   </component>
 </project>
