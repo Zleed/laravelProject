@@ -12,7 +12,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="caption" class="col-md-4 col-form-label">Post Caption</label>
+                        <label for="caption" class="col-md-4 col-form-label"><strong>Post Caption</strong></label>
 
                         <input id="caption" type="text"
                                class="form-control @error('caption') is-invalid @enderror" name="caption"
@@ -24,7 +24,7 @@
                     </div>
 
                     <div class="row">
-                        <label for="image" class="col-md-4 col-form-label">Post Image</label>
+                        <label for="image" class="col-md-4 col-form-label"><strong>Post Image</strong></label>
                         <input type="file" class="form-control-file" id="image" name="image">
                         @error('image')
                         <strong>{{ $message }}</strong>
