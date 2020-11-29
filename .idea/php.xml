@@ -53,6 +53,8 @@
       <path value="$PROJECT_DIR$/website/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/website/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/website/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/website/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/website/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/website/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/website/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/website/vendor/doctrine/lexer" />
@@ -107,8 +109,6 @@
       <path value="$PROJECT_DIR$/website/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/website/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/website/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/website/vendor/laravel/ui" />
-      <path value="$PROJECT_DIR$/website/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

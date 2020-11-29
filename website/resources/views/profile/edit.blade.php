@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form action="/profile/{{ $user->id }}" enctype="multipart/form-data" method="post">
+        <form action="/profile/{{ $user->id }}/update" enctype="multipart/form-data" method="post">
             @csrf
             @method('PATCH')
             <div class="row">
@@ -13,13 +13,13 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="caption" class="col-md-4 col-form-label"><strong>Title</strong></label>
+                        <label for="title" class="col-md-4 col-form-label"><strong>Title</strong></label>
 
-                        <input id="caption" type="text"
-                               class="form-control @error('caption') is-invalid @enderror" name="caption"
-                               value="{{ old('caption') ?? $user->profile->title }}" autocomplete="caption" autofocus>
+                        <input id="title" type="text"
+                               class="form-control @error('title') is-invalid @enderror" name="title"
+                               value="{{ old('title') ?? $user->profile->title }}" autocomplete="title" autofocus>
 
-                        @error('caption')
+                        @error('title')
                         <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                         @enderror
                     </div>

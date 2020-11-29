@@ -8,6 +8,11 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -15,20 +20,26 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920ee786-3566-4d48-84fd-8b98894dc42d" name="Default Changelist" comment="implemented Profile (model,controller,db_table)">
-      <change afterPath="$PROJECT_DIR$/website/resources/views/post/show.blade.php" afterDir="false" />
-    <list default="true" id="920ee786-3566-4d48-84fd-8b98894dc42d" name="Default Changelist" comment="post show.blade">
-      <change afterPath="$PROJECT_DIR$/website/resources/views/profile/edit.blade.php" afterDir="false" />
+    <list default="true" id="b5117ee9-132a-4e25-bb28-e107770f1dcd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/website/app/Policies/ProfilePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/post/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/app/Models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Models/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/database/migrations/2020_11_27_215502_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/database/migrations/2020_11_27_215502_create_profiles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/resources/views/post/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/post/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/resources/views/profile/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/profile/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/routes/web.php" afterDir="false" />
     </list>
@@ -37,14 +48,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/website/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/profile" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,6 +113,8 @@
       <path value="$PROJECT_DIR$/website/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/website/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/website/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/website/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/website/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/website/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/website/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/website/vendor/doctrine/lexer" />
@@ -156,12 +169,10 @@
       <path value="$PROJECT_DIR$/website/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/website/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/website/vendor/facade/ignition-contracts" />
-      <path value="$PROJECT_DIR$/website/vendor/laravel/ui" />
-      <path value="$PROJECT_DIR$/website/vendor/intervention/image" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1kq8SHQDjFP1TLeXCGVgBxdSfL9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1kxYs2UxfveEEayLkeDOwYYJGe7" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -170,54 +181,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/website/resources/views/post" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Zleed\Desktop\laravelProject\website\resources\views\post" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Zleed\Desktop\laravelProject\website\resources\views\profile" />
-      <recent name="C:\Users\Zleed\Desktop\laravelProject\website\public\svg" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="920ee786-3566-4d48-84fd-8b98894dc42d" name="Default Changelist" comment="" />
-      <created>1606416758848</created>
+      <changelist id="b5117ee9-132a-4e25-bb28-e107770f1dcd" name="Default Changelist" comment="" />
+      <created>1606643912598</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606416758848</updated>
-      <workItem from="1606416770259" duration="642000" />
-      <workItem from="1606417420681" duration="89000" />
-      <workItem from="1606417521298" duration="4425000" />
-      <workItem from="1606469107192" duration="24231000" />
-      <workItem from="1606556278617" duration="14955000" />
+      <updated>1606643912598</updated>
+      <workItem from="1606643913810" duration="16796000" />
     </task>
-    <task id="LOCAL-00001" summary="make:auth">
-      <created>1606487904542</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1606487904542</updated>
-    </task>
-    <task id="LOCAL-00002" summary="implemented Profile (model,controller,db_table)">
-      <created>1606516365231</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1606516365231</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,55 +212,26 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="make:auth" />
-    <MESSAGE value="implemented Profile (model,controller,db_table)" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Profile (model,controller,db_table)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="578" y="289" key="#Composer" timestamp="1606417446412">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606645209637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="289" key="#Composer/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606417446412" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606496305232">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606645209637" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1606644889463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606496305232" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606417085984" />
-    <state x="512" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606481723405">
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606644889463" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1606644892530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="512" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606481723405" />
-    <state x="557" y="161" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606557834185">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606644892530" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606662778847">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="557" y="161" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606557834185" />
-    <state x="549" y="340" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606510444338">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="340" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606510444338" />
-    <state x="567" y="314" width="393" height="195" key="Github.ShareDialog" timestamp="1606418824733">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="567" y="314" width="393" height="195" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606418824733" />
-    <state x="530" y="35" key="Github.UntrackedFilesDialog" timestamp="1606418840618">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="530" y="35" key="Github.UntrackedFilesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606418840618" />
-    <state x="280" y="26" key="SettingsEditor" timestamp="1606481501914">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="280" y="26" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606481501914" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1606509448090">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606509448090" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606568555852">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606568555852" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606662778847" />
   </component>
 </project>
