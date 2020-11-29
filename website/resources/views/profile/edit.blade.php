@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form action="/profile/{{ $user->id }}" enctype="multipart/form-data"  method="post">
+        <form action="/profile/{{ $user->id }}" enctype="multipart/form-data" method="post">
             @csrf
             @method('PATCH')
             <div class="row">
@@ -17,7 +17,7 @@
 
                         <input id="caption" type="text"
                                class="form-control @error('caption') is-invalid @enderror" name="caption"
-                               value="{{ old('caption') }}" autocomplete="caption" autofocus>
+                               value="{{ old('caption') ?? $user->profile->title }}" autocomplete="caption" autofocus>
 
                         @error('caption')
                         <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -29,7 +29,7 @@
 
                         <input id="description" type="text"
                                class="form-control @error('description') is-invalid @enderror" name="description"
-                               value="{{ old('description') }}" autocomplete="description" autofocus>
+                               value="{{ old('description') ?? $user->profile->description }}" autocomplete="description" autofocus>
 
                         @error('description')
                         <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
@@ -41,7 +41,7 @@
 
                         <input id="url" type="text"
                                class="form-control @error('url') is-invalid @enderror" name="url"
-                               value="{{ old('url') }}" autocomplete="url" autofocus>
+                               value="{{ old('url') ?? $user->profile->url }}" autocomplete="url" autofocus>
 
                         @error('url')
                         <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>

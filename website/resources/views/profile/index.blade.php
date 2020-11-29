@@ -12,7 +12,7 @@
                     <h1 class="pr-3">{{ $user->username }}</h1>
                     <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
                 </div>
-                <a href="/profile/create">Add new Post</a>
+                <a href="/p/create">Add new Post</a>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
