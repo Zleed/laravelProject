@@ -6,16 +6,17 @@
             <div class="col-3">
                 <img class="rounded-circle w-100 p-2" src="{{ $user->profile->profileImage() }}" alt="">
             </div>
-            <div class="col-9 pt-3">
-                <div class="d-flex justify-content-between align-items-baseline">
-                    <div class="d-flex align-items-baseline">
+            <div class="col-9 pt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
                         <h1 class="pr-3">{{ $user->username }}</h1>
                         @can('update', $user->profile)
-                            <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
+                            <a href="/profile/{{ $user->id }}/edit" class="pr-3"><button class="btn btn-primary">Edit Profile</button></a>
                         @endcan
+                        <div id="follow" data-user-id="{{ $user->id }}"></div>
                     </div>
                     @can('update', $user->profile)
-                        <a href="/p/create">Add new Post</a>
+                        <a href="/p/create"><button class="btn btn-primary">Add new Post</button></a>
                     @endcan
                 </div>
                 <div class="d-flex">

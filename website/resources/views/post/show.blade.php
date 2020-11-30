@@ -9,8 +9,9 @@
             <div class="col-4">
                 <div class="d-flex align-items-center">
                     <div>
-                        <a href="/profile/ {{$post->user->id}}">
-                            <img src="{{ $post->user->profile->profileImage() }}" class="rounded-circle w-100" alt="" style="max-width: 50px">
+                        <a href="/profile/ {{ $post->user->id }}">
+                            <img src="{{ $post->user->profile->profileImage() }}"
+                                 class="rounded-circle w-100" alt="" style="max-width: 50px">
                         </a>
                     </div>
                     <div class="pl-3">
@@ -21,7 +22,7 @@
                                 </a>
                                 •
                             </strong>
-                            <a href="#" class="pl-1">Follow</a>
+                            <a href="#" class="pl-1">FollowButton</a>
                         </div>
                     </div>
                 </div>

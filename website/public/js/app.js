@@ -65800,7 +65800,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 
-__webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
+__webpack_require__(/*! ./components/FollowButton */ "./resources/js/components/FollowButton.js");
 
 /***/ }),
 
@@ -65849,10 +65849,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/Example.js":
-/*!********************************************!*\
-  !*** ./resources/js/components/Example.js ***!
-  \********************************************/
+/***/ "./resources/js/components/FollowButton.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/FollowButton.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65865,26 +65865,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Example() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row justify-content-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-header"
-  }, "Example Component"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-body"
-  }, "I'm an example component!")))));
+function FollowButton(props) {
+  var ClickEvent = function ClickEvent(userId) {
+    axios.post("/follow/".concat(userId)).then(function (res) {
+      return console.log(res);
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: function onClick() {
+      return ClickEvent(props.userId);
+    },
+    className: "btn btn-primary"
+  }, "Follow");
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Example);
+/* harmony default export */ __webpack_exports__["default"] = (FollowButton);
 
-if (document.getElementById('example')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null), document.getElementById('example'));
+if (document.getElementById('follow')) {
+  var propsContainer = document.getElementById("follow");
+  var props = Object.assign({}, propsContainer.dataset);
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FollowButton, props), document.getElementById('follow'));
 }
 
 /***/ }),
