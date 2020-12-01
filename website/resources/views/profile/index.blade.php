@@ -11,18 +11,18 @@
                     <div class="d-flex align-items-center">
                         <h1 class="pr-3">{{ $user->username }}</h1>
                         @can('update', $user->profile)
-                            <a href="/profile/{{ $user->id }}/edit" class="pr-3"><button class="btn btn-primary">Edit Profile</button></a>
+                            <a href="/profile/{{ $user->id }}/edit" class="pr-3"><button class="btn btn-primary"><strong>Edit Profile</strong></button></a>
                         @endcan
-                        <div id="follow" data-user-id="{{ $user->id }}"></div>
+                        <div id="follow" data-user-id="{{ $user->id }}" data-follow="{{ $follows }}"></div>
                     </div>
                     @can('update', $user->profile)
-                        <a href="/p/create"><button class="btn btn-primary">Add new Post</button></a>
+                        <a href="/p/create"><button class="btn btn-primary"><strong>Add new Post</strong></button></a>
                     @endcan
                 </div>
                 <div class="d-flex">
                     <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
-                    <div class="pr-5"><strong>23k</strong> followers</div>
-                    <div class="pr-5"><strong>212</strong> following</div>
+                    <div class="pr-5"><strong>{{ $user->profile->followers->count() }}</strong> followers</div>
+                    <div class="pr-5"><strong>{{ $user->following->count() }}</strong> following</div>
                 </div>
                 <div class="pt-4"><strong>{{ $user->profile->title }}</strong></div>
                 <div>{{ $user->profile->description }}</div>

@@ -22,7 +22,7 @@
                                 </a>
                                 •
                             </strong>
-                            <a href="#" class="pl-1">FollowButton</a>
+                            <a href="#" class="pl-1">Follow</a>
                         </div>
                     </div>
                 </div>
