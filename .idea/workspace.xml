@@ -33,31 +33,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5117ee9-132a-4e25-bb28-e107770f1dcd" name="Default Changelist" comment="FollowButton with react">
-      <change afterPath="$PROJECT_DIR$/website/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/config/telescope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/public/vendor/telescope/app-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/public/vendor/telescope/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/public/vendor/telescope/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/public/vendor/telescope/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/public/vendor/telescope/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/post/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravelProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravelProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="b5117ee9-132a-4e25-bb28-e107770f1dcd" name="Default Changelist" comment="implemented follow functionality">
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/semantic-ui.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/simple-default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/simple-tailwind.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/tailwind.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/FollowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/FollowController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/website/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/js/components/FollowButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/js/components/FollowButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/post/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/post/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/resources/views/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/post/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +205,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606643912598</updated>
       <workItem from="1606643913810" duration="49922000" />
-      <workItem from="1606810758900" duration="677000" />
+      <workItem from="1606810758900" duration="14003000" />
     </task>
     <task id="LOCAL-00001" summary="edit/update method for profile image, title, description">
       <created>1606682038739</created>
@@ -234,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606744741714</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented follow functionality">
+      <created>1606818472282</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606818472282</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +250,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit/update method for profile image, title, description" />
     <MESSAGE value="FollowButton with react" />
-    <option name="LAST_COMMIT_MESSAGE" value="FollowButton with react" />
+    <MESSAGE value="implemented follow functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented follow functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606645209637">

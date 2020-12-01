@@ -49,10 +49,6 @@
             </div>
             <br>
         @endforeach
-        <div class="row">
-            <div class="col-12">
-                {{ $posts->links() }}
-            </div>
-        </div>
+        {{ $posts->links() }}
     </div>
 @endsection
