@@ -18,8 +18,7 @@ function FollowButton(props) {
         if (follow)
             return <button onClick={() => ClickEvent(props.userId)} className="btn btn-outline-secondary">
                 <strong>Unfollow</strong></button>
-        return <button onClick={() => ClickEvent(props.userId)} className="btn btn-primary "><strong>Follow</strong>
-        </button>
+        return <button onClick={() => ClickEvent(props.userId)} className="btn btn-primary "><strong>Follow</strong></button>
     }
 
     return followButton();
@@ -28,7 +27,7 @@ function FollowButton(props) {
 export default FollowButton;
 
 if (document.getElementById('follow')) {
-    const propsContainer = document.getElementById("follow");
-    const props = Object.assign({}, propsContainer.dataset);
+    const container = document.getElementById("follow");
+    const props = Object.assign({}, container.dataset);
     ReactDOM.render(<FollowButton {...props}/>, document.getElementById('follow'));
 }

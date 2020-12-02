@@ -34,17 +34,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5117ee9-132a-4e25-bb28-e107770f1dcd" name="Default Changelist" comment="implemented follow functionality">
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/semantic-ui.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/simple-default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/simple-tailwind.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/resources/views/vendor/pagination/tailwind.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/resources/views/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/post/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/website/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/resources/js/components/FollowButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/js/components/FollowButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/website/resources/views/profile/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +204,7 @@
       <updated>1606643912598</updated>
       <workItem from="1606643913810" duration="49922000" />
       <workItem from="1606810758900" duration="14003000" />
+      <workItem from="1606897417293" duration="7975000" />
     </task>
     <task id="LOCAL-00001" summary="edit/update method for profile image, title, description">
       <created>1606682038739</created>
@@ -266,10 +265,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606689249578" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1606682041982">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1606851580542">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606682041982" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606851580542" />
     <state x="93" y="93" width="1350" height="636" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606690236781">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -278,9 +277,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606743843475" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606773885085">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606942547465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606773885085" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606942547465" />
   </component>
 </project>

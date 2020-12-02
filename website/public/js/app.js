@@ -65912,8 +65912,8 @@ function FollowButton(props) {
 /* harmony default export */ __webpack_exports__["default"] = (FollowButton);
 
 if (document.getElementById('follow')) {
-  var propsContainer = document.getElementById("follow");
-  var props = Object.assign({}, propsContainer.dataset);
+  var container = document.getElementById("follow");
+  var props = Object.assign({}, container.dataset);
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FollowButton, props), document.getElementById('follow'));
 }
 
