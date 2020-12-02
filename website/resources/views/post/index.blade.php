@@ -20,8 +20,8 @@
                                             <span class="text-dark">{{ $post->user->username }}</span>
                                         </a>
                                         •
+                                        <a href="#" class="pl-1">Follow</a>
                                     </strong>
-                                    <a href="#" class="pl-1">Follow</a>
                                 </div>
                             </div>
                         </div>

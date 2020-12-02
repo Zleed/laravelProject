@@ -15,14 +15,14 @@
                         </a>
                     </div>
                     <div class="pl-3">
-                        <div class="h5">
+                        <div class="h5 w-100">
                             <strong>
                                 <a href="/profile/ {{$post->user->id}}" class="pr-1">
                                     <span class="text-dark">{{ $post->user->username }}</span>
                                 </a>
                                 •
+                                <a href="#" class="pl-1">Follow</a>
                             </strong>
-                            <a href="#" class="pl-1">Follow</a>
                         </div>
                     </div>
                 </div>

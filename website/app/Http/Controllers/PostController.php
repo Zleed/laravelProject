@@ -47,6 +47,7 @@ class PostController extends Controller
 
     public function show(Post $post)
     {
-        return view('post.show', compact('post'));
+        $follows = (auth()->user()) ? auth()->user()->following->contains($post->user->id) : false;
+        return view('post.show', compact('post', 'follows'));
     }
 }

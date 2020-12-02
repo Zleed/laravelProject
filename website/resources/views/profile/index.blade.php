@@ -13,7 +13,9 @@
                         @can('update', $user->profile)
                             <a href="/profile/{{ $user->id }}/edit" class="pr-3"><button class="btn btn-primary"><strong>Edit Profile</strong></button></a>
                         @endcan
-                        <div id="follow" data-user-id="{{ $user->id }}" data-follow="{{ $follows }}"></div>
+                        @if($user->id != auth()->user()->id)
+                            <div id="follow" data-user-id="{{ $user->id }}" data-follow="{{ $follows }}"></div>
+                        @endif
                     </div>
                     @can('update', $user->profile)
                         <a href="/p/create"><button class="btn btn-primary"><strong>Add new Post</strong></button></a>
